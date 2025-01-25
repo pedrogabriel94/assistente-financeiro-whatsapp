@@ -1,0 +1,16 @@
+{
+  "name": "Assistente finaceiro Whatsapp API",
+  "dockerComposeFile": [
+      "docker-compose.yml"
+  ],
+  "service": "assistente-finaceiro-whatsapp-api",
+  "workspaceFolder": "/home/node/app",
+  "customizations": {
+      "vscode": {
+          "extensions": [
+              "ms-azuretools.vscode-docker"
+          ]
+      }
+  },
+  "postCreateCommand": "echo 'run command: npm start'"
+}
