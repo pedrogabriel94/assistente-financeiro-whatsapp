@@ -9,6 +9,7 @@
   "author": "PC Solutions",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.21.2"
+    "express": "^4.21.2",
+    "natural": "^1.0.1"
   }
 }
