@@ -1,10 +1,10 @@
 require('dotenv').config();
-const ZAPI_INSTACE = process.env.ZAPI_INSTACE;
+const ZAPI_INSTANCE = process.env.ZAPI_INSTANCE;
 const ZAPI_TOKEN = process.env.ZAPI_TOKEN;
 const ZAPI_CLIENT_TOKEN = process.env.ZAPI_CLIENT_TOKEN;
 
 function sendMessage({ phone, message }) {
-    fetch(`https://api.z-api.io//instances/${ZAPI_INSTACE}/token/${ZAPI_TOKEN}/send-text`, {
+    fetch(`https://api.z-api.io//instances/${ZAPI_INSTANCE}/token/${ZAPI_TOKEN}/send-text`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
