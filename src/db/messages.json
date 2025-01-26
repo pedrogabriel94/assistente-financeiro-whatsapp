@@ -1,14 +1,5 @@
 {
-    "boas-vindas": {
-        "texto": "Olá {{nome}}! Seja bem vindo(a), a seu novo assistente financeiro. Mande uma breve descrição para registrarmos sua Despesa/Receita. Ex.: 'Gastei 100 reais no mercado'"
-    },
-    "registro": {
-        "texto": "{{tipo}} no valor de R$ {{valor}}. Podemos registrar?"
-    },   
-    "confirmação": {
-        "texto": "Ótimo, {{nome}}! Sua {{tipo}} foi registrada!"
-    },
-    "usuario-nao-encontrado": {
-        "texto": "Olá! Notamos que você ainda não possui cadastro na nossa base, como você gostaria de ser chamado(a)"
-    }
+    "boasVindas": "Olá {{nome}}! Seja bem vindo(a), a seu novo assistente financeiro. Mande uma breve descrição para registrarmos sua Despesa/Receita. Ex.: 'Gastei 100 reais no mercado'",
+    "registro": "{{tipo}} no valor de R$ {{valor}}. Podemos registrar?",   
+    "confirmacao": "Ótimo, {{nome}}! Sua {{tipo}} foi registrada!"
 }
