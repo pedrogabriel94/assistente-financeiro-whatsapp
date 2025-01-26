@@ -1,5 +1,0 @@
-{
-    "boasVindas": "Olá {{nome}}! Seja bem vindo(a), a seu novo assistente financeiro. Mande uma breve descrição para registrarmos sua Despesa/Receita. Ex.: 'Gastei 100 reais no mercado'",
-    "registro": "{{tipo}} no valor de R$ {{valor}}. Podemos registrar?",   
-    "confirmacao": "Ótimo, {{nome}}! Sua {{tipo}} foi registrada!"
-}
