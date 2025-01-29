@@ -1,7 +1,6 @@
 const express = require('express');
 const app = express();
 var usuarios = require('./db_fake/usuarios.json');
-const messages = require('./db_fake/messages.json');
 const natural = require('./natural/natural.js');
 const db = require('./config/db_config.js');
 
