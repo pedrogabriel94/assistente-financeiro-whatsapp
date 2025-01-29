@@ -1,8 +1,9 @@
 const express = require('express');
 const app = express();
-var usuarios = require('./db/usuarios.json');
-const messages = require('./db/messages.json');
+var usuarios = require('./db_fake/usuarios.json');
+const messages = require('./db_fake/messages.json');
 const natural = require('./natural/natural.js');
+const db = require('./config/db_config.js');
 
 app.use(express.json());
 
@@ -13,6 +14,11 @@ app.get('/', (req, res) => {
 app.post('/send-message', (req, res) => {
   sendMessage(req.body);
   res.send('Mensagem enviada com sucesso!');
+});
+
+app.get('/users', async (req, res) => {
+  let users = await db.select('*').from('users');
+  res.json(users);
 });
 
 app.post('/recive-message', (req, res) => {

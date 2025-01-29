@@ -4,7 +4,7 @@
       "docker-compose.yml"
   ],
   "service": "assistente-finaceiro-whatsapp-api",
-  "workspaceFolder": "/home/node/app",
+  "workspaceFolder": "/home/node/assistente-finaceiro-whatsapp-api",
   "customizations": {
       "vscode": {
           "extensions": [

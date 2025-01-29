@@ -8,6 +8,6 @@ services:
     ports:
       - 3000:3000
     environment:
-      - BACK_URL=db_admin
+      - NODE_ENV=development
     volumes:
-      - ../:/home/node/app:cached
+      - ../:/home/node/assistente-finaceiro-whatsapp-api:cached

@@ -1,6 +1,6 @@
 var natural = require('natural');
 const classifier = new natural.BayesClassifier();
-var arrayTreinamento = require('./../db/treinamento.json');
+var arrayTreinamento = require('./../db_fake/treinamento.json');
 
 function treinar(){
     arrayTreinamento.dados.forEach(element => {
