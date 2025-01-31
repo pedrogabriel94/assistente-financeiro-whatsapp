@@ -20,20 +20,14 @@ async function reciveMessage(data) {
 
   let message = objetoResponse.mensagem.replace('{nome}', data.senderName);
 
-  // zapiClient.sendMessage({
-  //   phone: data.phone,
-  //   message: message
-  // });
-
-
-  // venomClient.sendMessage({
-  //   phone: data.phone,
-  //   message: message
-  // });
-
-  // return {'mensagem': 'Mensagem recebida com sucesso!'}; 
-
-  return { 'mensagem': message };
+  try {
+    venomClient.sendMessage({
+      phone: data.phone,
+      message: message
+    });
+  } catch (error) {
+    //vá pra frente
+  }
 }
 
 module.exports = {

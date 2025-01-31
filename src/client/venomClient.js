@@ -1,6 +1,6 @@
 
 function sendMessage({ phone, message }) {
-    fetch(`localhost:9000/sendMessage`, {
+    fetch(`http://localhost:9000/sendMessage`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
